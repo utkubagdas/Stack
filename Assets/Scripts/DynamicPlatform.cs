@@ -85,13 +85,14 @@ public class DynamicPlatform : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        if (diff <= 0.15f && diff >= -0.15f)
+        if (diff <= 0.30f && diff >= -0.30f)
         {
             audioSource.pitch += 0.1f;
             audioSource.PlayOneShot(audioSource.clip);
         }
         else
         {
+            audioSource.Stop();
             audioSource.pitch = 0.2f;
         }
 
