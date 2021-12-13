@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5440922049742063440}
   - component: {fileID: 8948039291523057909}
   - component: {fileID: 6613858322534153279}
+  - component: {fileID: 3899001629350511098}
+  - component: {fileID: 7635932129759503946}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3899001629350511098
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4668501539978419690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44473356
+  m_Center: {x: 0.0074834973, y: 0.26194116, z: 0.0036419183}
+--- !u!114 &7635932129759503946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4668501539978419690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa20cb0dd8760ab4cb1aba50ca1c4a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectEffectPrefab: {fileID: 969886199417429755, guid: 14daa27190f5ab949987d635cdbc5801, type: 3}

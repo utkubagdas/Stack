@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float movementSpeed;
+    public bool IsControlable;
 
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * movementSpeed;
+        if(IsControlable)
+            transform.position += transform.forward * Time.deltaTime * movementSpeed;
     }
 }

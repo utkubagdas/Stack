@@ -97,15 +97,8 @@ public class DynamicPlatform : MonoBehaviour
         }
 
         float direction = diff > 0 ? 1f : -1f;
-        Debug.Log(diff);
         SlicePlatform(diff, direction);
 
         lastPlatform = this;
-    }
-
-
-    private void CalKekeCal()
-    {
-
     }
 }
