@@ -16,11 +16,13 @@ public class Player : MonoBehaviour
     {
         if(other.CompareTag("FinishLine"))
         {
-            //finishCam.Priority = 11;
+            finishCam.Priority = 11;
             //finishCam.Follow = PlayerController.gameObject.transform;
             //finishCam.LookAt = PlayerController.gameObject.transform;
             PlayerController.GetComponentInChildren<Animator>().SetTrigger("Dance");
             PlayerController.IsControlable = false;
+            GetComponentInChildren<CamRotator>().enabled = true;
+            GetComponentInChildren<CamRotator>().canRotate = true;
         }
         if(other.CompareTag("Fall"))
         {
