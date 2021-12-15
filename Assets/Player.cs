@@ -23,10 +23,17 @@ public class Player : MonoBehaviour
             PlayerController.IsControlable = false;
             GetComponentInChildren<CamRotator>().enabled = true;
             GetComponentInChildren<CamRotator>().canRotate = true;
+            StartCoroutine(FinishLevel());
         }
         if(other.CompareTag("Fall"))
         {
             SceneManager.LoadScene(0);
         }
+    }
+
+    IEnumerator FinishLevel()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(0);
     }
 }
